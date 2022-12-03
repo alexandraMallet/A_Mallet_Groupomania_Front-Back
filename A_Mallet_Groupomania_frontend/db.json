@@ -1,0 +1,63 @@
+[
+	{
+		"_id": "63502f9ab81c4ccc22210550",
+		"email": "mail3@test.com",
+		"password": "$2b$10$bBk3QdPVPBpugSEHyWfniuen.qk37HQVbZHKeuSClLa1MVdPFvKay",
+		"isAdmin": false,
+		"avatarUrl": "http://localhost:3000/images/avatar3.jpg1666199450747.jpg",
+		"pseudo": "jane3modified2",
+		"posts": [
+			"63524efe33667da4b153a798",
+			"63524f3b33667da4b153a79c",
+			"63524f4733667da4b153a7a0"
+		],
+		"__v": 3
+	},
+	{
+		"_id": "63502fa8b81c4ccc22210556",
+		"email": "mail4@test.com",
+		"password": "$2b$10$Zf34iHFBCAFMFTOu72DwBOMFSNtA.u8ifAAfIZrunPItT9wJINBPu",
+		"isAdmin": true,
+		"avatarUrl": "http://localhost:3000/images/avatar4.jpg1666199463981.jpg",
+		"pseudo": "jane4modified3",
+		"posts": [
+			"6352503333667da4b153a7a5",
+			"6352504033667da4b153a7a9"
+		],
+		"__v": 2
+	},
+	{
+		"_id": "63502fb3b81c4ccc2221055c",
+		"email": "mail5@test.com",
+		"password": "$2b$10$tmoEIJ5132ky84u65zdP8ueqXsRM1Nm24Ae..ifVWHlE663IXdnpW",
+		"isAdmin": false,
+		"avatarUrl": "http://localhost:3000/images/avatar5.jpg1666199475600.jpg",
+		"pseudo": "jane5",
+		"posts": [],
+		"__v": 0
+	},
+	{
+		"_id": "63502fedb81c4ccc22210574",
+		"email": "mail9@test.com",
+		"password": "$2b$10$UitNXsPHrltrSHY36ZMz9e9MS/VV0PMppQfe3UghDAjLC0tWAlDZW",
+		"isAdmin": false,
+		"avatarUrl": "http://localhost:3000/images/avatar9.jpg1666199533286.jpg",
+		"pseudo": "jane9",
+		"posts": [
+			"635250a533667da4b153a7ae",
+			"635250b133667da4b153a7b2",
+			"635250bb33667da4b153a7b6"
+		],
+		"__v": 3
+	},
+	{
+		"_id": "63504333c81b973ffc263397",
+		"email": "mail2@test.com",
+		"password": "$2b$10$W.HUqjKr.WTtsrYhp8.wHOrHGt0T0dzEY.sSErSj2Mgi1/q9aUMSK",
+		"isAdmin": false,
+		"avatarUrl": "http://localhost:3000/images/avatar2.jpg1666204466982.jpg",
+		"pseudo": "john2",
+		"posts": [],
+		"__v": 0
+	}
+]

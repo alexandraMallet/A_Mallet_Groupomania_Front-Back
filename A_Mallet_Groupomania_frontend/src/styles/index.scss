@@ -1,0 +1,45 @@
+$color-primary: #FD2D01;
+$color-secondary: #FFD7D7;
+$color-tertiary: #4E5166;
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ellipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*responsive*/
+
+// $breakpoints: (
+//     xs: 0,
+//     sm: 600,
+//     md: 768,
+//     lg: 1264,
+//     xl: 1904,
+// );
+
+@mixin sm {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (min-width:768px) and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width:992px) {
+        @content;
+    }
+}
