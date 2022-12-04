@@ -60,8 +60,6 @@ export default {
         likeStatus() {
 
             const usersLiked = this.post.usersLiked
-            console.log(usersLiked)
-            console.log(this.userLogged.userId)
             if (usersLiked) {
                 return usersLiked.find(u => u === this.userLogged.userId);
             }

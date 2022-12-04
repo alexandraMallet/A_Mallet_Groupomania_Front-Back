@@ -59,9 +59,7 @@ export default {
                 }
             })
             .then(response => {
-                console.log(response.data);
                 this.users = response.data;
-                console.log(this.users);
             })
             .catch(error => {
                 console.log(error);

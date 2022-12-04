@@ -89,7 +89,6 @@ export default {
             }
         })
             .then(response => {
-                console.log(response.data);
                 this.user = response.data;
                 this.posts = this.user.posts;
             })
@@ -113,7 +112,6 @@ export default {
                 }
             })
                 .then(response => {
-                    console.log(response.data);
                     this.user = response.data;
                     this.posts = this.user.posts;
                 })

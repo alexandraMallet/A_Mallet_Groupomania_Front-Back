@@ -80,7 +80,6 @@ export default {
             }
         })
             .then(response => {
-                console.log(response.data);
                 this.post = response.data;
             })
             .then(() => {
@@ -107,8 +106,6 @@ export default {
             formData.append('modifiedBy', this.userLoggedPseudo);
             if (this.file) { formData.append('image', this.file) }
 
-            console.log(formData);
-
             axios.put('http://localhost:3000/api/post/' + this.postId,
                 formData,
                 {
@@ -125,7 +122,6 @@ export default {
 
         handleFileUpload(event) {
             this.file = event.target.files[0];
-            console.log(this.file)
             this.imagePreview(this.file)
         },
         imagePreview(file) {

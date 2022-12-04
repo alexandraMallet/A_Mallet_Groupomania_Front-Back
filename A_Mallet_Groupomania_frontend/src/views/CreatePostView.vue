@@ -63,8 +63,6 @@ export default {
             formData.append('text', this.text);
             formData.append('image', this.file);
 
-            console.log(formData);
-
             axios.post('http://localhost:3000/api/post',
                 formData,
                 {
@@ -82,7 +80,6 @@ export default {
         },
         handleFileUpload(event) {
             this.file = event.target.files[0];
-            console.log(this.file)
             this.imagePreview(this.file)
         },
         imagePreview(file) {

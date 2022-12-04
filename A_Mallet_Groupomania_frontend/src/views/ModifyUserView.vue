@@ -82,8 +82,6 @@ export default {
         this.userLogged = JSON.parse(localStorage.userLogged);
         this.userLoggedPseudo = localStorage.userLoggedPseudo;
         this.userId = this.$route.params.id;
-        console.log(this.userId)
-
 
         axios.get('http://localhost:3000/api/auth/' + this.userId, {
             headers: {
@@ -91,7 +89,6 @@ export default {
             }
         })
             .then(response => {
-                console.log(response.data);
                 this.user = response.data;
             })
             .then(() => {
@@ -113,14 +110,11 @@ export default {
         },
         setUserPseudoInLocalStorage() {
             const userLoggedPseudo = this.userPseudo;
-            console.log(userLoggedPseudo)
             localStorage.setItem('userLoggedPseudo', userLoggedPseudo)
         },
         modifyUser() {
 
             this.userPseudo = this.userPseudo;
-            console.log(this.userPseudo)
-
 
             let formData = new FormData();
 
@@ -128,8 +122,6 @@ export default {
             formData.append('email', this.user.email);
             formData.append('image', this.file);
             if (this.password) { formData.append('password', this.password) };
-
-            console.log(formData);
 
             axios.put('http://localhost:3000/api/auth/' + this.userId,
                 formData,
@@ -141,12 +133,11 @@ export default {
             )
                 .then(() => this.setUserPseudoInLocalStorage())
                 .then(() => { this.$router.push('/utilisateurice/' + this.userId) })
-            // .catch(() => {console.log('erreur')});
+            .catch(() => {console.log('erreur')});
         },
 
         handleFileUpload(event) {
             this.file = event.target.files[0];
-            console.log(this.file)
             this.imagePreview(this.file)
         },
         imagePreview(file) {

@@ -131,9 +131,7 @@ export default {
             isAdmin: user.isAdmin,
             token: user.token
           }
-          console.log(userLogged);
           const userLoggedPseudo = user.pseudo;
-          console.log(userLoggedPseudo);
           localStorage.setItem('userLogged', JSON.stringify(userLogged));
           localStorage.setItem('userLoggedPseudo', userLoggedPseudo);
         })
@@ -155,7 +153,6 @@ export default {
       formData.append('pseudo', this.pseudo);
       formData.append('password', this.password);
       formData.append('image', this.file);
-      console.log(formData);
 
       const validEmail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
       const validPassword = /^[^\s]{8,}$/;
@@ -172,16 +169,13 @@ export default {
         formData
       )
         .then(function (response) {
-          console.log(formData);
           const user = response.data;
           const userLogged = {
             userId: user.userId,
             isAdmin: user.isAdmin,
             token: user.token
           }
-          console.log(userLogged);
           const userLoggedPseudo = user.pseudo;
-          console.log(userLoggedPseudo);
           localStorage.setItem('userLogged', JSON.stringify(userLogged));
           localStorage.setItem('userLoggedPseudo', userLoggedPseudo);
         })
@@ -192,7 +186,6 @@ export default {
     },
     handleFileUpload(event) {
       this.file = event.target.files[0];
-      console.log(this.file)
       this.imagePreview(this.file)
     },
     imagePreview(file) {

@@ -85,7 +85,6 @@ export default {
             }
         })
             .then(response => {
-                console.log(response.data);
                 this.post = response.data;
             })
             .then(() => {
@@ -121,7 +120,6 @@ export default {
                 }
             })
                 .then(response => {
-                    console.log(response.data);
                     this.post = response.data;
                 })
                 .then(() => {
@@ -144,7 +142,6 @@ export default {
         },
         changeLikeStatus() {
             const usersLiked = this.post.usersLiked
-            console.log(this.post.usersLiked);
             if (usersLiked) {
                 this.likeStatus = usersLiked.find(u => u === this.userLogged.userId);
             }

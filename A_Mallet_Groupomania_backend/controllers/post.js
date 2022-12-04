@@ -16,14 +16,13 @@ exports.createPost = (req, res, next) => {
             user.posts.push(`${post._id}`);
             user.save();
         })
-    // .catch((error) => res.status(400).json({ error }));
+    .catch((error) => res.status(400).json({ error }));
 
     post.user.push(`${req.auth.userId}`);
     post.save()
         .then(() => res.status(201).json({ message: `Nouvelle publication : ${post.text}` }))
 
-
-    // .catch((error) => res.status(400).json({ error }));
+    .catch((error) => res.status(400).json({ error }));
 };
 
 
@@ -118,7 +117,7 @@ exports.addOrRemoveLike = (req, res, next) => {
                     post.usersLiked = post.usersLiked.filter(e => e != `${user}`);
                     post.save()
                         .then(() => res.status(200).json({ message: "like supprimé" }))
-                    // .catch(error => res.status(500).json({ error }));
+                    .catch(error => res.status(500).json({ error }));
                 }
             }
         })
