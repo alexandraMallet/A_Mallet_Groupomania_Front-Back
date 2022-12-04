@@ -12,16 +12,13 @@ Node.js (doit être préalablement installé sur la machine), Vue.js, Express, M
 
 - cloner ce repository
 - depuis le répertoire __backend__, lancer la commande __npm i__
-
-    1. cloner ce repository
-    2. depuis le répertoire __backend__ lancer la commande npm i 
-    3. créer le fichier __.env__ dans le répertoire backend
-    4. remplir le fichier .env avec les identifiants de connexion à la BDD MongoDB, et la clé de token, sur le modèle du fichier .env.example
-    5. lancer la commande nodemon server depuis le répertoir backend
-        Le terminal affiche le message : "Listening on port 3000 - Application connectée à MongoDB"
-    6. depuis le répertoire __frontend__, lancer la commande npm install
-    7. lancer la commande npm run serve depuis le répertoire frontend
-        Vous devriez recevoir le message "App running at : - Local: http://localhost:8080/  - Network: http://[your IP adress]:8080/"
-    8. cliquer sur un des deux liens, ou le copier-coller dans la barre url du navigateur.
+- créer le fichier __.env__ dans le répertoire backend
+- remplir le fichier __.env__ avec les identifiants de connexion à la BDD MongoDB, et la clé de token, sur le modèle du fichier .env.example
+- lancer la commande __nodemon server__
+    Le terminal affiche le message : "Listening on port 3000 - Application connectée à MongoDB"
+- depuis le répertoire __frontend__, lancer la commande __npm install__
+- lancer la commande __npm run serve__ 
+    Vous devriez recevoir le message "App running at : - Local: http://localhost:8080/  - Network: http://[your IP adress]:8080/"
+- cliquer sur un des deux liens, ou le copier-coller dans la barre url du navigateur.
 
 
