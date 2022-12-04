@@ -10,6 +10,9 @@ Node.js (doit être préalablement installé sur la machine), Vue.js, Express, M
 
 ### pour lancer l'application depuis votre ordinateur :
 
+- cloner ce repository
+- depuis le répertoire __backend__, lancer la commande __npm i__
+
     1. cloner ce repository
     2. depuis le répertoire __backend__ lancer la commande npm i 
     3. créer le fichier __.env__ dans le répertoire backend
