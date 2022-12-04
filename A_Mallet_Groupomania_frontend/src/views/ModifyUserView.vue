@@ -12,7 +12,7 @@
             <input class="input-email" id="email" v-model="email" required />
 
             <label for="password">nouveau mot de passe, le cas échéant :</label>
-            <input class="input-password" id="password" v-model="password" />
+            <input type="password" class="input-password" id="password" v-model="password" />
 
             <label for="userPseudo">Pseudo :</label>
             <input class="user-pseudo" id="userPseudo" v-model="userPseudo" required />

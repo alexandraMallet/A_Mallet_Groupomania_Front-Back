@@ -109,7 +109,7 @@ export default {
     margin-top: 70px;
     align-items: baseline;
 
-    p {
+    .to-my-account {
         font-size: small;
         margin-top: 0;
         margin-bottom: 5px;
