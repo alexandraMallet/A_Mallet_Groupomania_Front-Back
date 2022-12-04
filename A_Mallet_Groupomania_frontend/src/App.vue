@@ -2,17 +2,6 @@
   <router-view />
 </template>
 
-<!-- <script>
-import { MqResponsive } from "vue3-mq";
-export default {
-    components: {
-        MqResponsive
-    }
-}
-
-</script> -->
-
-
 
 <style lang="scss">
 

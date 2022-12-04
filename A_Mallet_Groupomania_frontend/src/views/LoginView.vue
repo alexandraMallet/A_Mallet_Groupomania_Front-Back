@@ -136,8 +136,8 @@ export default {
           localStorage.setItem('userLoggedPseudo', userLoggedPseudo);
         })
         .then(() => { this.$router.push('/') })
-        .catch(function (error) {
-          console.log(error);
+        .catch(function () {
+          alert("identifiants incorrects");
         });
     },
     redirectSignup() {
