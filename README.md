@@ -8,7 +8,7 @@ Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges e
 
 Node.js, Vue.js, Express, MongoDB
 
-# pour lancer l'application depuis votre ordinateur :
+### pour lancer l'application depuis votre ordinateur :
 
     1. cloner ce repository
     2. lancer la commande npm i depuis le répertoire backend
