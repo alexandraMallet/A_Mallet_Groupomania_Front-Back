@@ -7,7 +7,7 @@
 
     <div v-if="$data.post" class="post-card">
 
-        <div class="img-container">
+        <div v-if="$data.post.imageUrl" class="img-container">
             <img :src="post.imageUrl" :alt="altText" />
         </div>
 
