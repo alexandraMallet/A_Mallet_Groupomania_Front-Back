@@ -4,6 +4,7 @@
 
     <div class="users-nav">
         <div v-if="authorizedUser" class="my-account">
+            <p class="to-my-account">Aller à mon compte :</p>
             <UserCard v-if="$data.user" :key="user.id" :user="user" aria-label="aller à mon compte" />
         </div>
 
@@ -107,6 +108,13 @@ export default {
     margin-bottom: 30px;
     margin-top: 70px;
     align-items: baseline;
+
+    p {
+        font-size: small;
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin-left: 20px
+    }
 
     @include md {
         margin-top: 30px;

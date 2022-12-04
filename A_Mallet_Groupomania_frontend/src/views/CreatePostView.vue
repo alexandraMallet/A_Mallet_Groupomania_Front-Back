@@ -100,9 +100,17 @@ export default {
     @include center;
 
     h1 {
-        margin-top: 30px;
+        margin-top: 50px;
         margin-bottom: 0px;
         text-align: center;
+
+        @include md {
+            margin-top: 30px;
+        }
+
+        @include lg {
+            margin-top: 30px;
+        }
 
     }
 }
