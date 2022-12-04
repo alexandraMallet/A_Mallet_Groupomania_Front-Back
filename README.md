@@ -6,15 +6,19 @@ Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges e
 
 ## langages, frameworks, outils...
 
-Node.js, Vue.js, Express, MongoDB
+Node.js (doit être préalablement installé sur la machine), Vue.js, Express, MongoDB, mongoose...
 
 ### pour lancer l'application depuis votre ordinateur :
 
     1. cloner ce repository
-    2. lancer la commande npm i depuis le répertoire backend
-    3. créer le fichier .env dans le répoirtoire backend
+    2. depuis le répertoire __backend__ lancer la commande npm i 
+    3. créer le fichier __.env__ dans le répertoire backend
     4. remplir le fichier .env avec les identifiants de connexion à la BDD MongoDB, et la clé de token, sur le modèle du fichier .env.example
-    5. lancer la commande npm run start depuis le répertoire frontend
-    6. lancer la commande nodemon server depuis le répertoir backend
+    5. lancer la commande nodemon server depuis le répertoir backend
+        Le terminal affiche le message : "Listening on port 3000 - Application connectée à MongoDB"
+    6. depuis le répertoire __frontend__, lancer la commande npm install
+    7. lancer la commande npm run serve depuis le répertoire frontend
+        Vous devriez recevoir le message "App running at : - Local: http://localhost:8080/  - Network: http://[your IP adress]:8080/"
+    7. cliquer sur un des deux liens, ou le copier-coller dans la barre url du navigateur.
 
-Ouvrir le navigateur avec l'adresse indiquée dans le terminal du front (http://localhost:8080)
+
