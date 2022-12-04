@@ -1,10 +1,10 @@
-# GROUPOMANIA - réseau social d'entreprise - projet de formation Openclassrooms
+## GROUPOMANIA - réseau social d'entreprise - projet de formation Openclassrooms
 
 "Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le
 but de cet outil est de faciliter les interactions entre collègues. Le département RH de
 Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues."
 
-## langages, frameworks, outils...
+### langages, frameworks, outils...
 
 Node.js (doit être préalablement installé sur la machine), Vue.js, Express, MongoDB, mongoose...
 
@@ -19,6 +19,6 @@ Node.js (doit être préalablement installé sur la machine), Vue.js, Express, M
     6. depuis le répertoire __frontend__, lancer la commande npm install
     7. lancer la commande npm run serve depuis le répertoire frontend
         Vous devriez recevoir le message "App running at : - Local: http://localhost:8080/  - Network: http://[your IP adress]:8080/"
-    7. cliquer sur un des deux liens, ou le copier-coller dans la barre url du navigateur.
+    8. cliquer sur un des deux liens, ou le copier-coller dans la barre url du navigateur.
 
 
