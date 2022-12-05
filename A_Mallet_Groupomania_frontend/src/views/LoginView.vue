@@ -294,12 +294,14 @@ export default {
 
   .return {
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 0;
 
     button {
       margin-bottom: 0;
+      margin-top: 0;
       padding-left: 0;
       padding-right: 0;
+      width: 150px;
     }
   }
 
