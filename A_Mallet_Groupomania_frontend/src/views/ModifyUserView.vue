@@ -20,7 +20,7 @@
 
             <div class="image-form">
                 <input type="file" id="image" class="image-input" name="image" accept="image/png, image/jpeg"
-                    @change="handleFileUpload($event)" required />
+                    @change="handleFileUpload($event)"/>
                 <label class="image" for="image">Modifier votre photo de profil</label>
 
                 <div class="preview-image">
