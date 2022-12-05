@@ -32,7 +32,7 @@
 
     <div v-if="!rightToChange" class="unauthorized">
 
-        <img :src="imageUrl">
+        <img :src="imageUrl" :alt="textAlt">
         <h2>Cette publication n'est pas la vôtre, vous ne pouvez pas la modifier.</h2>
         <Button :buttonText="buttonTextUnauthorized" @click="redirection" />
     </div>
@@ -66,8 +66,14 @@ export default {
             userLogged: {},
             postId: '',
             imageUrl: '',
+            textAlt: '',
             selectedImageUrl: '',
             rightToChange: false
+        }
+    },
+    computed: {
+        textAlt () {
+            return `image de ${this.post.user[0].pseudo}`
         }
     },
     created() {
@@ -244,6 +250,7 @@ export default {
 }
 
 .unauthorized {
+    margin-top: 30px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -251,5 +258,13 @@ export default {
     text-align: center;
     min-height: 500px;
     line-height: 1.5;
+
+    img {
+        max-width: 350px;
+        border: 3px solid $color-tertiary;
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 </style>

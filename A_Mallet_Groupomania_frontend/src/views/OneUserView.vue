@@ -2,16 +2,18 @@
 
     <Header />
 
-    <div class="title">
-        <h1>profil de :</h1>
-    </div>
+
 
     <div v-if="$data.user" class="user-card">
         <div v-if="authorized" class="one-profile">
 
+            <div class="title">
+                <h1>profil de :</h1>
+            </div>
+
             <div class="user-infos">
                 <h2>{{ user.pseudo }}</h2>
-                <img :src="user.avatarUrl" :alt="altText"/>
+                <img :src="user.avatarUrl" :alt="altText" />
             </div>
 
             <div v-if="$data.user.posts" class="user-posts">
@@ -25,7 +27,7 @@
             </div>
 
         </div>
-        <div v-else>
+        <div v-else class="unauthorized">
             <p>Ce compte n'est pas le vôtre : informations non-accessibles</p>
             <Button :buttonText="buttonTextUnauthorized" @click="redirection" />
 
@@ -36,7 +38,7 @@
     <Button v-if="rightToModify" :buttonText="buttonTextModifier" @click="linkToModify" />
     <Button v-if="rightToDelete" :buttonText="buttonTextSupprimer" @click="deleteUser" />
 
-    <Footer class="footer"/>
+    <Footer class="footer" />
 
 </template>
 
@@ -220,5 +222,12 @@ export default {
 
 
     }
+}
+
+.unauthorized {
+    margin-top: 50px;
+    @include center;
+    flex-direction: column;
+    text-align: center;
 }
 </style>

@@ -17,7 +17,7 @@
     </div>
 
     <div class="title">
-        <h1>dernières publications...</h1>
+        <h1>dernières publications sur le réseau...</h1>
     </div>
 
     <div class="posts-contener">
