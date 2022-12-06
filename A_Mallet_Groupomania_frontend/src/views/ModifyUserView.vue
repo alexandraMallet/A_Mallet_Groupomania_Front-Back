@@ -282,6 +282,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    text-align: center;
 
     img {
         height: 100px;
