@@ -180,16 +180,8 @@ export default {
           localStorage.setItem('userLoggedPseudo', userLoggedPseudo);
         })
         .then(() => { this.$router.push('/') })
-        // .catch(function (error) {
-        //   console.log(error);
-        // });
-        // .catch(function (response) {                    //(error)
-        //   alert(response.response.data.message);  
-        //   console.log(response);                  //alert(error.message) ou alert(error)
-        // });
-
         .catch((request) => {if (request.response.status === 409) {
-          alert("impossible de créer un compte avec cet email 409")    // data :emailErrorMessage
+          alert("impossible de créer un compte avec cet email")    
         } else {
           console.log("erreur")
         }});
