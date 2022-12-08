@@ -10,10 +10,6 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 library.add(faUserSecret, faHeart)
 
-
-
-
-
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
 .component(FileReader.name, FileReader)

@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 const mongooseError = require("mongoose-errors");
 
-
-
 const postSchema = new mongoose.Schema({
     userId : {type : String, required : true},
     text : {type : String},
@@ -23,8 +21,6 @@ const postSchema = new mongoose.Schema({
 
 postSchema.plugin(mongooseError);
 
-
 const Post = mongoose.model("Post", postSchema);
-
 
 module.exports = Post;
